@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Service</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      padding-top: 80px; /* Memberi ruang untuk header tetap */
+      text-align: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: rebeccapurple;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .profile {
+      margin: 40px 0;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+      animation: fadeIn 2s infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0.5;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .description {
+      font-size: 18px;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .contact-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-button:hover {
+      background-color: #0056b3;
+    }
+    
+    .news-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.news-card-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.news-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.verified-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: verifiedAnimation 2s ease-in-out infinite;
+}
+
+.verified-svg {
+  width: 14px;
+  height: 14px;
+  color: white;
+}
+
+.news-card-content {
+  padding: 20px;
+}
+
+.news-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.news-card-summary {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.news-card-text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+@keyframes verifiedAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    Customer Service
+  </header>
+
+  <div class="profile">
+    <div class="name">Riuze</div>
+    <div class="description">Professional Customer Support</div>
+    <a href="https://wa.me/628388910861" class="contact-button">Contact Us</a>
+  </div>
+  <div class="news-card">
+  <div class="news-card-header">
+    <div class="news-author">
+      <span class="author-name">Riuze</span>
+      <div class="verified-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="verified-svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="news-card-content">
+    <h3 class="news-card-title">Author</h3>
+    <p class="news-card-summary">Ini Adalah Website Jual Beli Produk Digital Yang Di Buat Oleh Riuze.</p>
+    <p class="news-card-text">Code Website Ini Di Buat Oleh Riuze Dan Di Bagikan Secara Free Untuk Kalian Yang Ingin Jualan Tapi Tidak Ada Template Website.</p>
+  </div>
+</div>
+</body>
+</html>

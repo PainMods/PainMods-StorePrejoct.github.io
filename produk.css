@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #2c2f38;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #3a3f47;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5c5c;
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  background: #555;
+  color: #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.title {
+  background: #6a1b9a;
+  color: white;
+  font-weight: bold;
+  padding: 5px 0;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart-btn, .buy-btn {
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-btn {
+  background: #ff9800;
+}
+
+.cart-btn:hover, .buy-btn:hover {
+  opacity: 0.9;
+}

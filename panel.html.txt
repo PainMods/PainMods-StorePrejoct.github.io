@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel</title>
+  <link rel="stylesheet" href="produk.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Produk</h1>
+        <div class="card-container">
+            <div class="card">
+                <div class="discount">-16%</div>
+                <div class="image">150 x 150</div>
+                <div class="title">1GB 1K</div>
+                <div class="buttons">
+                    <button class="cart-btn" onclick="addToCart('Panel 1GB', 1000)">Add to Cart</button>
+                    <a href="https://wa.me/628388910861" target="_blank">
+                     <button class="buy-btn">Buy</button>
+                     </a>
+                  </div>
+                </div>
+            <div class="card">
+                <div class="discount">-16%</div>
+                <div class="image">150 x 150</div>
+                <div class="title">2GB 2K</div>
+                <div class="buttons">
+                    <button class="cart-btn" onclick="addToCart('Panel 2GB', 2000)">Add to Cart</button>
+                    <a href="https://wa.me/628388910861" target="_blank">
+                   <button class="buy-btn">Buy</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="discount">-13%</div>
+                <div class="image">150 x 150</div>
+                <div class="title">3GB 3K</div>
+                <div class="buttons">
+                    <button class="cart-btn" onclick="addToCart('Panel 3GB', 3000)">Add to Cart</button>
+                    <a href="https://wa.me/628388910861" target="_blank">
+                      <button class="buy-btn">Buy</button>
+                      </a>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="discount">-13%</div>
+                <div class="image">150 x 150</div>
+                <div class="title">4GB 4K</div>
+                <div class="buttons">
+                    <button class="cart-btn" onclick="addToCart('Panel 4GB', 250000)">Add to Cart</button>
+                    <a href="https://wa.me/628388910861" target="_blank">
+                       <button class="buy-btn">Buy</button>
+                      </a>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="discount">-16%</div>
+                <div class="image">150 x 150</div>
+                <div class="title">5GB 5K</div>
+                <div class="buttons">
+                    <button class="cart-btn" onclick="addToCart('Panel 5GB', 5000)">Add to Cart</button>
+                    <a href="https://wa.me/628388910861" target="_blank">
+                      <button class="buy-btn">Buy</button>
+                      </a>
+                  </div>
+                </div>
+            <div class="card">
+                <div class="discount">-90%</div>
+                <div class="image">150 x 150</div>
+                <div class="title">6GB 6K</div>
+                <div class="buttons">
+                    <button class="cart-btn" onclick="addToCart('Panel 6GB', 6000)">Add to Cart</button>
+                    <a href="https://wa.me/628388910861" target="_blank">
+                      <button class="buy-btn">Buy</button>
+                      </a>
+                </div>
+            </div>
+        </div>
+        <a href="cart.html" class="view-cart">Go to Cart</a>
+    </div>
+    
+    <script src="produk.js"></script>
+    </body>
+    </html>

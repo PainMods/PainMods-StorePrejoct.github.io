@@ -1,0 +1,302 @@
+/* Reset some styles */
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #2c2f38;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 9px;
+    color: black;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.menu-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 9px 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cart-button i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.help-button i {
+    color: #fff;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+.slider {
+    width: 85%;
+    height: 210px;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-align: left;
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Search */ 
+.input {
+  max-width: 190px;
+  margin: 20px;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  color: black;
+}
+
+.input:focus {
+  animation: rotateShadow 2s infinite linear;
+}
+
+@keyframes rotateShadow {
+  0% {
+    box-shadow: -2px -2px 8px 1px #aa00ff, 2px 2px 8px 1px #3700ff;
+  }
+  25% {
+    box-shadow: -2px 2px 8px 1px #aa00ff, 2px -2px 8px 1px #3700ff;
+  }
+  50% {
+    box-shadow: 2px 2px 8px 1px #aa00ff, -2px -2px 8px 1px #3700ff;
+  }
+  75% {
+    box-shadow: 2px -2px 8px 1px #aa00ff, -2px 2px 8px 1px #3700ff;
+  }
+  100% {
+    box-shadow: -2px -2px 8px 1px #aa00ff, 2px 2px 8px 1px #3700ff;
+  }
+}
+.scroll-container {
+  display: flex; 
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px; /* Tinggi scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: rebeccapurple; /* Warna scrollbar */
+  border-radius: 10px; /* Membuat ujung scrollbar melengkung */
+}
+
+.nav-item {
+  flex: 0 0 auto; /* Tombol tidak mengecil */
+  border: 2px solid rebeccapurple;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 10px; /* Spasi antar tombol */
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 10px; /* Tambahkan jarak bawah antara tombol dan scrollbar */
+}
+
+.nav-item.active {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+
+.container {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Animasi judul */
+.animated-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  animation: slideIn 2s ease-out;
+}
+
+.animated-title span {
+  font-size: 1.2em;
+  animation: bounce 1.5s infinite;
+}
+
+/* Grid produk */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Kartu produk */
+.product-card {
+  position: relative;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+  width: 100%;
+  border-bottom: 3px solid purple;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4c4c;
+  color: white;
+  padding: 5px 8px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-info h3 {
+  font-size: 1em;
+  margin: 10px 0 0;
+  color: white;
+}
+
+/* Animasi Kartu */
+.animated-card {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Keyframes untuk animasi */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
